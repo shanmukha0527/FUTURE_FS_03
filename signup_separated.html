@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up - boAt</title>
+
+<link href="css/signup.css" rel="stylesheet"/></head>
+<body>
+<a class="back-home" href="#" onclick="goHome()">
+        ← Back to Home
+    </a>
+<div class="signup-container">
+<div class="signup-image">
+<div class="brand-section">
+<h2>boAt</h2>
+<p>Join the Audio Revolution</p>
+</div>
+</div>
+<div class="signup-form">
+<div class="form-header">
+<h1>Create Account</h1>
+<p>Join boAt for premium audio experience</p>
+</div>
+<div class="step-indicator">
+<div class="step active" id="step-1">1</div>
+<div class="step" id="step-2">2</div>
+<div class="step" id="step-3">3</div>
+</div>
+<div class="error-message" id="error-message"></div>
+<div class="success-message" id="success-message"></div>
+<div class="loading" id="loading">
+<div class="spinner"></div>
+<p>Creating your account...</p>
+</div>
+<form id="signup-form">
+<!-- Step 1: Basic Information -->
+<div class="form-step active" id="form-step-1">
+<div class="form-row">
+<div class="form-group">
+<label for="firstName">First Name</label>
+<input id="firstName" name="firstName" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="lastName">Last Name</label>
+<input id="lastName" name="lastName" required="" type="text"/>
+</div>
+</div>
+<div class="form-group">
+<label for="email">Email Address</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<div class="password-toggle">
+<input id="password" name="password" required="" type="password"/>
+<button class="toggle-btn" onclick="togglePassword('password')" type="button">👁️</button>
+</div>
+<div class="password-strength" id="password-strength"></div>
+<div class="strength-indicator" id="strength-indicator">
+<div class="strength-bar"></div>
+<div class="strength-bar"></div>
+<div class="strength-bar"></div>
+<div class="strength-bar"></div>
+</div>
+</div>
+<div class="form-group">
+<label for="confirmPassword">Confirm Password</label>
+<div class="password-toggle">
+<input id="confirmPassword" name="confirmPassword" required="" type="password"/>
+<button class="toggle-btn" onclick="togglePassword('confirmPassword')" type="button">👁️</button>
+</div>
+</div>
+<div class="step-nav">
+<div></div>
+<button class="step-btn" onclick="nextStep()" type="button">Next</button>
+</div>
+</div>
+<!-- Step 2: Personal Information -->
+<div class="form-step" id="form-step-2">
+<div class="form-row">
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input id="phone" name="phone" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="dateOfBirth">Date of Birth</label>
+<input id="dateOfBirth" name="dateOfBirth" required="" type="date"/>
+</div>
+</div>
+<div class="form-group">
+<label for="gender">Gender</label>
+<select id="gender" name="gender" required="">
+<option value="">Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">Other</option>
+<option value="prefer-not-to-say">Prefer not to say</option>
+</select>
+</div>
+<div class="form-group">
+<label for="address">Address</label>
+<input id="address" name="address" placeholder="Street Address" required="" type="text"/>
+</div>
+<div class="form-row">
+<div class="form-group">
+<label for="city">City</label>
+<input id="city" name="city" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="pincode">Pincode</label>
+<input id="pincode" name="pincode" required="" type="text"/>
+</div>
+</div>
+<div class="step-nav">
+<button class="step-btn" onclick="prevStep()" type="button">Previous</button>
+<button class="step-btn" onclick="nextStep()" type="button">Next</button>
+</div>
+</div>
+<!-- Step 3: Preferences and Terms -->
+<div class="form-step" id="form-step-3">
+<div class="form-group">
+<label for="interests">Select Music Interests</label>
+<select id="interests" multiple="" name="interests">
+<option value="rock">Rock</option>
+<option value="pop">Pop</option>
+<option value="electronic">Electronic</option>
+<option value="classical">Classical</option>
+<option value="jazz">Jazz</option>
+<option value="hip-hop">Hip Hop</option>
+<option value="country">Country</option>
+<option value="indie">Indie</option>
+</select>
+<div class="interests-helper">Hold Ctrl (Cmd on Mac) to select multiple options</div>
+</div>
+<div class="checkbox-group">
+<label>
+<input id="newsletter" name="newsletter" type="checkbox"/>
+                            Subscribe to boAt newsletter for latest updates
+                        </label>
+</div>
+<div class="checkbox-group">
+<label>
+<input id="promotions" name="promotions" type="checkbox"/>
+                            Receive promotional offers and discounts
+                        </label>
+</div>
+<div class="checkbox-group">
+<label>
+<input id="terms" name="terms" required="" type="checkbox"/>
+                            I agree to the <a href="#" onclick="showTerms()">Terms &amp; Conditions</a> and <a href="#" onclick="showPrivacy()">Privacy Policy</a>
+</label>
+</div>
+<div class="step-nav">
+<button class="step-btn" onclick="prevStep()" type="button">Previous</button>
+<button class="signup-btn" type="submit">Create Account</button>
+</div>
+</div>
+</form>
+<div class="divider">
+<span>Or sign up with</span>
+</div>
+<div class="social-login">
+<button class="social-btn" onclick="socialSignup('google')">
+<span>🔍</span> Google
+                </button>
+<button class="social-btn" onclick="socialSignup('facebook')">
+<span>📘</span> Facebook
+                </button>
+</div>
+<div class="login-link">
+                Already have an account? <a href="#" onclick="goToLogin()">Sign In</a>
+</div>
+</div>
+</div>
+
+<script defer="True" src="js/signup.js"></script></body>
+</html>
