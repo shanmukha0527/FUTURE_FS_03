@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   boAt - Premium Audio Lifestyle Brand
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Header -->
+  <header class="header">
+   <nav class="nav">
+    <div class="logo">
+     boAt
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+     <li>
+      <a href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#categories">
+       Categories
+      </a>
+     </li>
+     <li>
+      <a href="#all-products">
+       All Products
+      </a>
+     </li>
+     <li>
+      <a href="#features">
+       Features
+      </a>
+     </li>
+     <li>
+      <a href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+    <div class="auth-buttons">
+     <a class="auth-btn" href="login.html">
+      Login
+     </a>
+     <a class="auth-btn signup" href="signup.html">
+      Sign Up
+     </a>
+    </div>
+    <div class="hamburger" id="hamburger">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </div>
+   </nav>
+  </header>
+  <!-- Cart Notification -->
+  <div class="cart-notification" id="cart-notification">
+   Product added to cart!
+  </div>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+   <div class="hero-content">
+    <h1>
+     Premium Audio Experience
+    </h1>
+    <p>
+     Discover the perfect sound with boAt's premium audio lifestyle products
+    </p>
+    <button class="cta-button" onclick="scrollToSection('all-products')">
+     Explore All Products
+    </button>
+   </div>
+  </section>
+  <!-- Product Categories -->
+  <section class="categories" id="categories">
+   <div class="container">
+    <h2 class="section-title">
+     Product Categories
+    </h2>
+    <div class="category-grid" id="category-grid">
+     <div class="category-card" onclick="filterProducts('headphones')">
+      <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+      </div>
+      <div class="category-content">
+       <h3>
+        Headphones
+       </h3>
+       <p>
+        Premium wireless and wired headphones
+       </p>
+       <div class="price">
+        ₹1,999 - ₹9,999
+       </div>
+      </div>
+     </div>
+     <div class="category-card" onclick="filterProducts('earphones')">
+      <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+      </div>
+      <div class="category-content">
+       <h3>
+        Earphones
+       </h3>
+       <p>
+        True wireless and neckband earphones
+       </p>
+       <div class="price">
+        ₹999 - ₹4,999
+       </div>
+      </div>
+     </div>
+     <div class="category-card" onclick="filterProducts('speakers')">
+      <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+      </div>
+      <div class="category-content">
+       <h3>
+        Speakers
+       </h3>
+       <p>
+        Portable and home audio speakers
+       </p>
+       <div class="price">
+        ₹1,499 - ₹12,999
+       </div>
+      </div>
+     </div>
+     <div class="category-card" onclick="filterProducts('smartwatch')">
+      <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80')">
+      </div>
+      <div class="category-content">
+       <h3>
+        Smart Watches
+       </h3>
+       <p>
+        Feature-rich fitness and smart watches
+       </p>
+       <div class="price">
+        ₹2,999 - ₹8,999
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- All Products Section -->
+  <section class="products" id="all-products">
+   <div class="container">
+    <h2 class="section-title">
+     All Products
+    </h2>
+    <!-- Product Filter -->
+    <div class="product-filter">
+     <button class="filter-btn active" onclick="filterProducts('all')">
+      All Products
+     </button>
+     <button class="filter-btn" onclick="filterProducts('headphones')">
+      Headphones
+     </button>
+     <button class="filter-btn" onclick="filterProducts('earphones')">
+      Earphones
+     </button>
+     <button class="filter-btn" onclick="filterProducts('speakers')">
+      Speakers
+     </button>
+     <button class="filter-btn" onclick="filterProducts('smartwatch')">
+      Smart Watches
+     </button>
+    </div>
+    <div class="loading" id="loading">
+     <div class="spinner">
+     </div>
+     <p>
+      Loading products...
+     </p>
+    </div>
+    <div class="product-grid" id="product-grid">
+     <!-- Products will be loaded dynamically -->
+    </div>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="features" id="features">
+   <div class="container">
+    <h2 class="section-title">
+     Why Choose boAt?
+    </h2>
+    <div class="features-grid">
+     <div class="feature-item">
+      <div class="feature-icon">
+       🎵
+      </div>
+      <h3>
+       Premium Sound
+      </h3>
+      <p>
+       Experience crystal clear audio with deep bass and crisp highs
+      </p>
+     </div>
+     <div class="feature-item">
+      <div class="feature-icon">
+       🔋
+      </div>
+      <h3>
+       Long Battery Life
+      </h3>
+      <p>
+       Enjoy extended playtime with our advanced battery technology
+      </p>
+     </div>
+     <div class="feature-item">
+      <div class="feature-icon">
+       💧
+      </div>
+      <h3>
+       Water Resistant
+      </h3>
+      <p>
+       IPX7 rating ensures protection against water and sweat
+      </p>
+     </div>
+     <div class="feature-item">
+      <div class="feature-icon">
+       ⚡
+      </div>
+      <h3>
+       Fast Charging
+      </h3>
+      <p>
+       Quick charge technology for minimal downtime
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+   <div class="container">
+    <div class="footer-content">
+     <div class="footer-section">
+      <h3>
+       Products
+      </h3>
+      <a href="#">
+       Headphones
+      </a>
+      <a href="#">
+       Earphones
+      </a>
+      <a href="#">
+       Speakers
+      </a>
+      <a href="#">
+       Smart Watches
+      </a>
+     </div>
+     <div class="footer-section">
+      <h3>
+       Support
+      </h3>
+      <a href="#">
+       Customer Care
+      </a>
+      <a href="#">
+       Warranty
+      </a>
+      <a href="#">
+       Service Centers
+      </a>
+      <a href="#">
+       FAQs
+      </a>
+     </div>
+     <div class="footer-section">
+      <h3>
+       Company
+      </h3>
+      <a href="#">
+       About Us
+      </a>
+      <a href="#">
+       Careers
+      </a>
+      <a href="#">
+       Press
+      </a>
+      <a href="#">
+       Investors
+      </a>
+     </div>
+     <div class="footer-section">
+      <h3>
+       Connect
+      </h3>
+      <a href="#">
+       Facebook
+      </a>
+      <a href="#">
+       Instagram
+      </a>
+      <a href="#">
+       Twitter
+      </a>
+      <a href="#">
+       YouTube
+      </a>
+     </div>
+    </div>
+    <div class="footer-bottom">
+     <p>
+      © 2025 boAt Lifestyle. All rights reserved.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
