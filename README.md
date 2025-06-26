@@ -118,4 +118,5 @@ If you like this project, give it a ⭐ on GitHub and feel free to fork!
 MIT License – Free for personal and commercial use.
 
 📎 Hashtags
-#boAtClone #LoginPage #SignupPage #HTMLCSSJS #FrontendOnly #EcommerceUI #ProductFilter #MultiStepForm #ResponsiveDesign #ModernWebDesign #OpenSourceProject #boAtLifestyle #futureintern #futureintern_03
+#boAtClone #LoginPage #SignupPage #HTMLCSSJS #FrontendOnly #EcommerceUI #ProductFilter #MultiStepForm #ResponsiveDesign #ModernWebDesign #OpenSourceProject #boAtLifestyle #futureintern #futureintern_03 
+#future-fs-03
