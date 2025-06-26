@@ -11,7 +11,6 @@ This repository contains a front-end clone of the **boAt Lifestyle** website, bu
 ## 🌐 Live Preview
 
 https://future-fs-03-mu.vercel.app/
-
 ---
 
 ## 📁 Project Structure
