@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Login - boAt</title>
+
+<link href="css/login.css" rel="stylesheet"/></head>
+<body>
+<div class="demo-indicator">Demo Mode</div>
+<a class="back-home" href="index.html">
+        ← Back to Home
+    </a>
+<div class="login-container">
+<div class="login-image">
+<div class="brand-section">
+<h2>boAt</h2>
+<p>Premium Audio Lifestyle</p>
+</div>
+</div>
+<div class="login-form">
+<div class="form-header">
+<h1>Welcome Back</h1>
+<p>Sign in to your boAt account</p>
+</div>
+<div class="error-message" id="error-message"></div>
+<div class="success-message" id="success-message"></div>
+<div class="loading" id="loading">
+<div class="spinner"></div>
+<p>Signing you in...</p>
+</div>
+<form id="login-form">
+<div class="form-group">
+<label for="email">Email Address</label>
+<input id="email" name="email" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password</label>
+<div class="password-toggle">
+<input id="password" name="password" required="" type="password"/>
+<button class="toggle-btn" id="toggle-btn" type="button">Show</button>
+</div>
+</div>
+<div class="forgot-password">
+<a href="#" id="forgot-password-link">Forgot Password?</a>
+</div>
+<button class="login-btn" id="login-btn" type="submit">Sign In</button>
+</form>
+<div class="divider">
+<span>Or continue with</span>
+</div>
+<div class="social-login">
+<button class="social-btn" id="google-login">
+                    🔍 Google
+                </button>
+<button class="social-btn" id="facebook-login">
+                    📘 Facebook
+                </button>
+</div>
+<div class="signup-link">
+                Don't have an account? <a href="index.html">Sign up here</a>
+</div>
+</div>
+</div>
+
+<script defer="True" src="js/login.js"></script></body>
+</html>
