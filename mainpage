@@ -1,0 +1,73 @@
+# 🎧 boAt Lifestyle – Landing Page UI
+
+This project is the **homepage UI** for the boAt Lifestyle website – built using only **HTML**, **CSS**, and **JavaScript**. It features product categories, a hero banner, filtering system, and a responsive design for a premium shopping experience.
+
+---
+
+## 📁 Files
+
+```plaintext
+📂 project-rootboAt-project/
+│
+├── index.html            
+├── login.html
+├── signup.html
+│
+├── css/
+│   ├── style.css         
+│   ├── login.css         
+│   └── signup.css        
+│
+├── js/
+│   ├── main.js           
+│   ├── login.js          
+│   └── signup.js  
+🖼 Features
+✨ Hero section with CTA
+
+🎧 Product categories & filters
+
+🛒 Dynamic product grid
+
+🧩 Responsive layout
+
+🚀 Smooth scroll & animations
+
+🧑‍💼 Login / Signup buttons (non-functional UI links)
+
+🛠 How to Run
+Download all three files (main.html, styles.css, script.js)
+
+Place them in the same directory
+
+Open main.html in your browser
+
+No server or build tool required – it's 100% static front-end.
+
+🚀 Preview
+Sample product categories include:
+
+Headphones
+
+Earphones
+
+Speakers
+
+Smart Watches
+
+Includes filters, pricing, product badges, and stylish cards.
+
+📌 Highlights
+#PureHTMLCSSJS
+
+#ResponsiveDesign
+
+#GradientTheme
+
+#DynamicProductGrid
+
+#SmoothAnimations
+
+#CleanStructure
+
+#boAtInspiredUI
