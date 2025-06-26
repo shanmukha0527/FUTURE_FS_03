@@ -1,0 +1,105 @@
+# 📝 boAt Lifestyle – Signup Page
+
+This is the **multi-step signup UI** for the boAt Lifestyle project. Built using only HTML, CSS, and JavaScript, it offers an elegant onboarding experience for new users with modern validation, password strength indicator, and user preferences.
+
+---
+
+## 📂 File Included
+boAt-project/
+│
+├── index.html            
+├── login.html
+├── signup.html
+│
+├── css/
+│   ├── style.css         
+│   ├── login.css         
+│   └── signup.css        
+│
+├── js/
+│   ├── main.js           
+│   ├── login.js          
+│   └── signup.js  
+ # Complete Signup Form UI
+No external libraries or frameworks are required.
+
+🎯 Features
+#MultiStepForm (3 steps)
+
+#ResponsiveDesign
+
+#PasswordStrengthChecker
+
+#CustomValidation
+
+#UserInterestsSelector
+
+#TermsAgreement
+
+#CSSAnimations
+
+#SignupFlowUX
+
+🧩 Step Breakdown
+✅ Step 1: Account Details
+First & Last Name
+
+Email (with format validation)
+
+Password & Confirm Password
+
+Password visibility toggle
+
+Password strength meter
+
+👤 Step 2: Personal Information
+Phone, Date of Birth
+
+Gender (select dropdown)
+
+Address, City, Pincode
+
+🎵 Step 3: Preferences & Agreements
+Select music interests (multi-select)
+
+Newsletter & promotional checkbox
+
+Terms & Privacy Policy confirmation
+
+🛠 How to Use
+Open signup.html in any modern web browser.
+
+Fill in the fields, navigate between steps using Next / Previous.
+
+Click Create Account on the final step to simulate signup.
+
+⚠️ Note: This is a front-end only demo. No data is stored or submitted to a server.
+
+📸 UI Highlights
+Clean and modern UI with brand-aligned gradients
+
+Works on both desktop and mobile (media queries)
+
+Input validation & visual feedback
+
+Smooth transitions and visual step indicators
+
+🚀 Future Enhancements
+Connect to backend (e.g., Supabase, Firebase)
+
+Integrate real signup logic and data storage
+
+Add email verification & OTP
+
+Replace alerts with modal dialogs
+
+👨‍💻 Author
+Akhilesh Gondrala
+
+Built with ❤️ to demo a modern, user-friendly signup interface.
+
+📄 License
+MIT License — Free to use, modify, and share.
+
+📎 Tags
+#SignupForm #boAtLifestyle #MultiStepUI #ResponsiveWeb #FrontEndOnly #PasswordValidation #FormUX #ModernHTMLCSS #UserPreferences #SignupFlow #JavaScriptForm
